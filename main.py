@@ -70,7 +70,12 @@ def create_product():
     """
     Handles POST requests to /products.
     Creates a new product from the request body.
-    Raises BadRequestError if the request body is invalid.
+    
+    Example body:
+    {
+        "name": "Monitor",
+        "price": 300
+    }
     """
     logger.info("Received request to create a new product")
     try:
